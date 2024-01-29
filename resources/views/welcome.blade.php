@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,23 @@
     <!-- Includiamo gli assets con la direttiva vite -->
     @vite('resources/js/app.js')
 </head>
-<body class="p-5 bg-dark text-light  d-flex justify-content-center flex-wrap">
-    <h1 class="w-100 text-center p-4">Laravel Template</h1>
-    <img src="{{ Vite::asset('resources/img/logo.png') }}" alt="Logo">
-   <div class="w-100 text-center p-4">
-     <h3>Bootstrap</h3>
-    <h3>Scss</h3></div>
+
+<body>
+    <div class="container vh-100">
+        <div class="row">
+            @foreach ($movies as $movie)
+                <div class="col-4">
+                    <div class="card bg-warning text-dark">
+
+                        <h5 class="card-title">{{ $movie['title'] }}</h5>
+
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+
+
 </body>
+
 </html>
