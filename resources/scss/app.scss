@@ -1,6 +1,29 @@
 //importo bootstrap
 @import "~bootstrap/scss/bootstrap";
+@import "./_partials/utility.scss";
+@import "./_partials/variables.scss";
+body {
+    background-color: $blue-200;
+    header {
+        padding: 1.875rem 2.5rem;
+        background-color: $black;
+        box-shadow: 0px 10px 13px -7px black;
+        height: 15vh;
+        .title {
+            #logo1 {
+                color: $beige;
+                font-size: 5rem;
+                margin-right: 1rem;
+            }
+            #logo2 {
+                color: $blue-100;
+                font-size: 3.4375rem;
+            }
+        }
+        .slogan {
+            font-size: 3.125rem;
 
-// body {
-//     background-image: url("../img/page_bg.jpg");
-// }
+            color: $beige;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+//!flex
+.flex {
+    display: flex;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+//!display e visibility
+.none {
+    display: none;
+}
+.block {
+    display: block;
+}
+//!altezze e spaziature
+.h-auto {
+    height: auto;
+}
+.h-400 {
+    height: 25rem;
+}
